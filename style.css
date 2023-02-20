@@ -52,7 +52,7 @@ p{
     color: brown;
 }
 
-.content-center-p a{
+.content-center-p a {
     border: 2px solid burlywood;
     background-color: antiquewhite;
     color: brown;
@@ -150,4 +150,84 @@ a{
 .footer img{
     max-width: 30%;
 }
+
+.container-content-img img{
+    margin-bottom: 5rem;
+    width: 300px;
+    height: 300px;
+    margin: 2px;
+    object-fit: cover;
+}
+
+#btn1{
+    border: 2px solid burlywood;
+    background-color: antiquewhite;
+    color: brown;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 10rem;
+}
+
+#btn1:hover{
+    color: brown;
+    background-color: bisque;
+    border-color: rgb(211, 67, 41);
+}
+
+#btn1:active{
+    background-color: brown;
+    color: white;
+}
+
+.open-button{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 99;
+}
+
+.form-container{
+    max-width: 1000px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text]
+{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.regular p{
+    border: 2px solid brown;
+    width: 1000px;
+    height: 500px;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    background-color: rgb(247, 234, 218);
+}
+
 

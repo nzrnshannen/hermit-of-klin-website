@@ -12,6 +12,7 @@
     <title>Tchaikovsky: The Hermit of Klin</title>
 </head>
 <body>
+    <script type="text/javascript" src="script.js" defer></script>
     <div class="main-container">
         <div class="container">
             <div class="container-heading">
@@ -30,8 +31,11 @@
                         <p>Tchaikovsky began to truly merge the drama and emotion of the Romantic period with the symphonic form in his Fourth Symphony.</p>
                     </div>
                     <div class="container-content-img">
-                        <a href="https://www.britannica.com/biography/Pyotr-Ilyich-Tchaikovsky" target="_blank" title="Click to read full story of Tchaikovsky's life"><img src="tchaikovsky-portrait.jpg"></a>
+                        <a href="https://www.britannica.com/biography/Pyotr-Ilyich-Tchaikovsky" target="_blank" title="Click to read full story of Tchaikovsky's life">
+                            <img src="tchaikovsky-1.jpg" alt="tchaikovsky-1" id="tchaikovskyImg"></a>
                     </div>
+
+                    <input type="button" onclick="changeImage()" id="btn1" value=">" title="Next Image"/>
                 </div>
 
                 <div class="container-content-center col-sm-6">
@@ -51,6 +55,32 @@
                             <br>
                             <br>
                             <a target="_blank" href="https://www.udiscovermusic.com/classical-features/best-tchaikovsky-works-10-essential-pieces/">See Tchaikovsky's Best Works!</a></center>
+
+                        <button class="open-button" onclick="openForm()">
+                            Try Append Text!
+                        </button>
+
+                        <div class="form-popup" id="myForm">
+                            <form class="form-container">
+                                <article class="regular">
+                                    <h2>Appending Text</h2>
+                                    <label for="tbuser">
+                                        Add some text: 
+                                    </label>
+
+                                        <input type="text" id="tbuser" placeholder="Enter text..." maxlength="1000">
+
+                                        <input type="button" id="btn2" value="Append">
+                                        <input type="button" id="btn3" value="Reset">
+                                        <p class="output" id="output1"></p>
+                                </article>
+
+                                <button class="btn cancel" type="button" onclick="closeForm()">
+                                    Close
+                                </button>
+        
+                            </form>
+                        </div>
                     </div>
                 </div>
 
@@ -69,10 +99,11 @@
                         </p>
                     </div>
                     <div class="container-content-img">
-                        <a href="https://theculturetrip.com/europe/russia/articles/10-things-you-didnt-know-about-tchaikovsky/" target="_blank" title="Read more about fun facts of Tchaikovsky"><img src="coffee-music.jpg"></a>
-            
+                        <a href="https://theculturetrip.com/europe/russia/articles/10-things-you-didnt-know-about-tchaikovsky/" target="_blank" title="Read more about fun facts of Tchaikovsky">
+                        <img src="coffee-music.jpg"></a>
+                            
                         <!--<div class = hidden-content" for hover still needs to be fixed-->
-
+                        
                     </div>
                 </div>
             </div>
@@ -96,5 +127,6 @@
             <img src="spinning-dancer.gif">
         </div>
     </div>
+
 </body>
 </html>
